@@ -1,0 +1,12 @@
+Feature: Online Shopping Feature
+  Verify if user is able to add product to cart and place an order in to the site
+
+  Scenario: Login as a authenticated user
+    Given user is  on homepage
+    When user navigates to Login Page and enter username and Password
+    And homepage is displayed 
+    And user navigated to T-Shirt page
+    And user selects a T-Shirt and product to cart
+    And user navigate to cart page to proceed to checkout
+    And user place an order
+    Then success message is displayed
